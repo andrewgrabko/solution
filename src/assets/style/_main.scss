@@ -1,0 +1,241 @@
+svg{
+	display: inline-block;
+	vertical-align: middle;
+	@include ba-transition('fill, stroke');
+}
+a,
+[type="submit"],
+[type="button"],
+button{
+	@include ba-transition;
+}
+
+.ba-section-about{
+	background-color:#ebebeb;
+	padding: 50px 0 50px;
+	@include breakpoint(medium){
+			padding: 122px 0 122px;
+			
+		}
+}
+.ba-about{
+	background: #fff url('../img/bg-about.jpg') no-repeat center;
+	background-size: cover;
+	padding: 30px 40px 150px;
+	text-align: center;
+	@include breakpoint(medium){
+			padding:68px 95px 345px ;
+			
+		}
+	
+	&__title{
+		font-family: Proxima;
+		color:  #fefbfc;
+		margin-top: 30px;
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: uppercase;
+		@include breakpoint(medium){
+			font-size: 36px;
+			
+		}
+	}
+}
+.ba-about-content{
+	padding-top:65px ;
+	color:  #665f60;
+	font-size: 20px;
+	font-weight: 400;
+	p{
+
+		span{
+			font-weight: 700;
+		}
+	}
+	&__link{
+		display: inline-block;
+		font-family: "PT Sans";
+		color:  #7d7a7c;
+		font-size: 20px;
+		font-style: italic;
+		text-align: center;
+		line-height: 48px;
+		border:1px solid #7d7a7c;
+		background-color:#ebebeb;
+		padding-left:50px;
+		padding-right:50px;
+		margin-top: 90px;
+		
+				
+	}
+}
+.ba-section-services{
+	background-color:#ebebeb;
+	
+}
+
+.ba-service-design{
+	text-align: center;
+	padding: 90px 95px;
+	background-color:#dbdbdb;
+	&__img{
+		margin-bottom: 15px;
+	}
+	&__title{
+		font-family: "PT Sans";
+ 		color:  #665f60;
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	&__subtitle{
+		font-family: "PTSans";
+		color:  #665f60;
+		font-size: 18px;
+		font-style: italic;
+	}
+}
+.ba-service-design--light{
+	background-color:#ebebeb;
+}
+.ba-service-our{
+	background: #fff url('../img/bgservice.jpg') no-repeat center;
+	background-size: cover;
+	padding: 111px 30px 306px;
+	text-align: center;
+	&__img{
+		margin-bottom: 10px;
+	}
+	&__title{
+		font-family: Proxima;
+		color:  #fefcfe;
+		font-size: 36px;
+		font-weight: 600;
+		margin-bottom: 100px;
+	}
+	&__subtitle{
+		font-family: "PT Sans";
+		color:  #fefcfe;
+		font-size: 18px;
+		font-style: italic;
+	}
+}
+.slick-dots {
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    font-size: 0;
+    margin-top: 37px;
+    & li {
+    width: 9px;
+    height: 9px;
+    background: $body-font-color;
+    border:none;
+    margin-left: 19px;
+    border-radius:50%;
+    transition: transform .3s ease-in;
+        &.slick-active {
+            background: $primary-color;
+            transform: scale(1.1);
+        }
+    }
+}
+.slick-prev{
+	display: none!important;
+}
+.slick-next{
+	display: none!important;
+}
+.ba-slider{
+	max-width: 730px;
+	margin: 0 auto;
+	.slick-track{
+		display: flex;
+	}
+	.slick-slide{
+		max-width: 730px;
+		height: auto;
+	}
+}
+
+.ba-section-works{
+	background: #fff url('../img/bg-works.jpg') no-repeat center;
+	background-size: cover;
+	text-align: center;
+	padding: 44px 0 53px;
+}
+.ba-works__title{
+	font-family: Proxima;
+	color:  #fefcfe;
+	font-size: 36px;
+	font-weight: 600;
+	margin-top: 35px;
+	margin-bottom: 50px;
+	}
+.slick-slide img {
+    width: 100%;
+    display: block;
+}
+.ba-gallery--link{
+	border:1px solid #fff;
+	background-color:#b5b2d7;
+	color:#fff;
+
+}
+.ba-section-team{
+	background-color:#ebebeb;
+	padding: 50px 0 90px;
+}
+.ba-team{
+	text-align: center;
+	&__img{
+		margin-bottom: 15px;
+	}
+	&__title{
+		font-family: Proxima;
+		color:  #665f60;
+		font-size: 36px;
+		font-weight: 600;
+		    margin-bottom: 30px;
+	}
+}
+.ba-product{
+	background-color:#FFF;
+	padding-top: 150px;
+	&__link{
+		padding: 150px 65px 0px;
+		display: flex;
+		flex-direction:column;
+		position:relative;
+	}
+	&__img{
+		position:absolute;
+		top: -136px;
+    right: 46px;
+		img{
+		border-radius:50%;
+		border:5px solid #ebebeb;
+		}
+	}
+	&__title{
+		font-family: Proxima;
+		color:  #9f9acf;
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__subtitle{
+		font-family: "PT Sans";
+		color:  #665f60;
+		font-size: 24px;
+		font-style: italic
+	}
+	&__socials{
+		background-color:#9f9acf;
+		padding: 10px;
+	}
+}
+
+
+

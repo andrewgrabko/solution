@@ -1,0 +1,141 @@
+.ba-header{
+	padding: 21px 0 13px;
+	position:absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	
+}
+.menu .active>a {
+    background: none;
+    color: #fff;
+}
+.ba-main-menu{
+	& > li + li{
+		margin-left: 20px;
+		@include breakpoint(large){
+			margin-left: 31px;
+		}
+	}
+	a{
+		font-family: Proxima;
+		color:  #ffffff;
+		font-size: 24px;
+		font-weight: 600;
+		text-transform: uppercase;
+		background:none;
+		@include breakpoint(medium){
+			font-size: 18px;
+		}
+		@include breakpoint(small){
+			font-size: 14px;
+		}
+		&:hover, &:focus{
+			color:#36c2ff;
+		}
+
+	}
+}
+.ba-mob-menu{
+	
+	a{
+		padding: 10px 20px;
+	}
+	.active{
+		a{
+			color:#555f76;
+			background:#36c2ff;
+		}
+	}
+}
+
+.ba-account{
+	display: inline-flex;
+	align-items:center;
+	svg{
+		fill:$black;
+		margin-right: 10px;
+	}
+}
+
+.ba-main-header{
+	background: #fff url('../img/bgheader.jpg') no-repeat center;
+	background-size: cover;
+	position: relative;
+	padding: 100px 0 40px 0;
+	
+	@include breakpoint(medium){
+			padding: 180px 0 190px 0;
+			
+		}
+	@include breakpoint(large){
+			padding:260px 0 280px 0 ;
+		}	
+	&__title{
+			font-family: Proxima;
+			color:  #fefefb;
+			font-size: 36px;
+			font-weight: 700;
+			text-transform: uppercase;
+		
+		@include breakpoint(medium){
+			font-size: 50px;
+			text-transform: uppercase;
+		}
+		@include breakpoint(large){
+			font-family: Proxima;
+			color:  #fefefb;
+			font-size: 72px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}	
+	}
+	&__subtitle{
+		font-family: "PT Sans";
+		color:  #fefdfd;
+		font-size: 18px;
+		font-style: italic;
+		font-size: 18px;
+		font-weight: 400;
+		margin-top: 15px;
+		text-align: center;
+		@include breakpoint(medium){
+			font-size: 30px;
+		}
+		
+	}
+	&__link{
+		border-radius: 4px;
+		border: 0.6px solid #555f76;
+		background-color:  #2a3239;
+		box-shadow: 0px 1px 4px 0px #000000;
+		max-width:110px;
+		padding: 5px;
+		font-size: 15px;
+		color:  #555f76;
+		text-transform: uppercase;
+		margin-top: 20px;
+		@include breakpoint(medium){
+			max-width:135px;
+			padding: 15px;
+		}
+			
+		&:hover{
+			
+			
+		}
+		svg{
+			stroke:currentColor;
+		}
+	}
+}
+.ba-main-header__content{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	@include breakpoint(medium){
+			display: flex;
+			flex-direction:column;
+			align-items:center;
+		}
+}
